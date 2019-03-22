@@ -4,9 +4,14 @@
 
  - KiCad 5.0.2
 
-## Custom
+## Custom symbols
 
  - Custom symbols are placed inside the folder custom_symbols
+ - Added as Project Specific Libraries
+
+## Custom footprints
+
+ - Custom footprints are placed inside the folder custom_footprints
  - Added as Project Specific Libraries
 
 ## Todo
