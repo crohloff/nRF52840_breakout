@@ -1,0 +1,5 @@
+(sym_lib_table
+  (lib (name nrf52840)(type Legacy)(uri ${KIPRJMOD}/custom_symbols/nrf52840.lib)(options "")(descr ""))
+  (lib (name usb_type_c)(type Legacy)(uri ${KIPRJMOD}/custom_symbols/usb_type_c.lib)(options "")(descr ""))
+  (lib (name mcp73832-2-ot)(type Legacy)(uri ${KIPRJMOD}/custom_symbols/mcp73832-2-ot.lib)(options "")(descr ""))
+)
