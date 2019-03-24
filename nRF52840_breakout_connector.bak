@@ -429,14 +429,14 @@ Wire Notes Line
 $Comp
 L Connector_Generic:Conn_01x05 J?
 U 1 1 5C9538C5
-P 6400 1500
+P 7550 -550
 AR Path="/5C9538C5" Ref="J?"  Part="1" 
 AR Path="/5C94F379/5C9538C5" Ref="J5"  Part="1" 
-F 0 "J5" H 6480 1542 50  0000 L CNN
-F 1 "FPC 0.5mm RA SMD" H 6480 1451 50  0000 L CNN
-F 2 "" H 6400 1500 50  0001 C CNN
-F 3 "~" H 6400 1500 50  0001 C CNN
-	1    6400 1500
+F 0 "J5" H 7630 -508 50  0000 L CNN
+F 1 "FPC 0.5mm RA SMD" H 7630 -599 50  0000 L CNN
+F 2 "" H 7550 -550 50  0001 C CNN
+F 3 "1734592-5" H 7550 -550 50  0001 C CNN
+	1    7550 -550
 	1    0    0    -1  
 $EndComp
 Text Notes 4850 600  0    50   ~ 0
@@ -868,4 +868,38 @@ NoConn ~ 950  2600
 NoConn ~ 950  2500
 NoConn ~ 950  2400
 NoConn ~ 950  2300
+$Comp
+L CONNECTOR_FFC_1734592-5:1734592-5 J?
+U 1 1 5C986751
+P 6600 1600
+F 0 "J?" H 6372 1646 50  0000 R CNN
+F 1 "1734592-5" H 6372 1555 50  0000 R CNN
+F 2 "custom_footprints:CONNECTOR_FFC_1734592-5" H 6600 1600 50  0001 L BNN
+F 3 "None" H 6600 1600 50  0001 L BNN
+F 4 "TE Connectivity" H 6600 1600 50  0001 L BNN "Field4"
+F 5 "https://www.digikey.de/product-detail/en/te-connectivity-amp-connectors/1734592-5/A101299CT-ND/2567441?utm_source=snapeda&utm_medium=aggregator&utm_campaign=symbol" H 6600 1600 50  0001 L BNN "Field5"
+F 6 "A101299CT-ND" H 6600 1600 50  0001 L BNN "Field6"
+F 7 "Compliant" H 6600 1600 50  0001 L BNN "Field7"
+F 8 "1734592-5" H 6600 1600 50  0001 L BNN "Field8"
+F 9 "https://www.te.com/usa-en/product-1734592-5.html?te_bu=Cor&te_type=disp&te_campaign=seda_glo_cor-seda-global-disp-prtnr-fy19-seda-model-bom-cta_sma-317_1&elqCampaignId=32493" H 6600 1600 50  0001 L BNN "Field9"
+F 10 "Conn FPC Connector SKT 5 POS 0.5mm Solder RA SMD T/R" H 6600 1600 50  0001 L BNN "Field10"
+F 11 "1734592-5" H 6600 1600 50  0001 L BNN "Field11"
+	1    6600 1600
+	-1   0    0    -1  
+$EndComp
+$Comp
+L power:GND #PWR?
+U 1 1 5C996CA4
+P 6150 1950
+F 0 "#PWR?" H 6150 1700 50  0001 C CNN
+F 1 "GND" H 6155 1777 50  0000 C CNN
+F 2 "" H 6150 1950 50  0001 C CNN
+F 3 "" H 6150 1950 50  0001 C CNN
+	1    6150 1950
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	6200 1900 6150 1900
+Wire Wire Line
+	6150 1900 6150 1950
 $EndSCHEMATC
