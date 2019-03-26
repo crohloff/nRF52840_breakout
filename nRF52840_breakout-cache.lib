@@ -58,25 +58,6 @@ X EXT 3 0 -300 100 U 50 50 1 1 P
 ENDDRAW
 ENDDEF
 #
-# Connector_Generic_Conn_01x02
-#
-DEF Connector_Generic_Conn_01x02 J 0 40 Y N 1 F N
-F0 "J" 0 100 50 H V C CNN
-F1 "Connector_Generic_Conn_01x02" 0 -200 50 H V C CNN
-F2 "" 0 0 50 H I C CNN
-F3 "" 0 0 50 H I C CNN
-$FPLIST
- Connector*:*_1x??_*
-$ENDFPLIST
-DRAW
-S -50 -95 0 -105 1 1 6 N
-S -50 5 0 -5 1 1 6 N
-S -50 50 50 -150 1 1 10 f
-X Pin_1 1 -200 0 150 R 50 50 1 1 P
-X Pin_2 2 -200 -100 150 R 50 50 1 1 P
-ENDDRAW
-ENDDEF
-#
 # Connector_Generic_Conn_01x12
 #
 DEF Connector_Generic_Conn_01x12 J 0 40 Y N 1 F N
@@ -376,6 +357,26 @@ X ~ 2 0 -100 30 U 50 50 1 1 P
 ENDDRAW
 ENDDEF
 #
+# JST_PH_S2B-PH-SM4-TB_LF__SN__S2B-PH-SM4-TB(LF)(SN)
+#
+DEF JST_PH_S2B-PH-SM4-TB_LF__SN__S2B-PH-SM4-TB(LF)(SN) J 0 40 Y Y 1 L N
+F0 "J" -200 220 50 H V L BNN
+F1 "JST_PH_S2B-PH-SM4-TB_LF__SN__S2B-PH-SM4-TB(LF)(SN)" -200 -371 50 H V L BNN
+F2 "JST_S2B-PH-SM4-TB(LF)(SN)" 0 0 50 H I L BNN
+F3 "S2B-PH-SM4-TB_LF__SN_" 0 0 50 H I L BNN
+F4 "https://www.digikey.de/product-detail/en/jst-sales-america-inc/S2B-PH-SM4-TB_LF__SN_/455-1749-1-ND/926846?utm_source=snapeda&utm_medium=aggregator&utm_campaign=symbol" 0 0 50 H I L BNN
+F5 "455-1749-1-ND" 0 0 50 H I L BNN
+F6 "None" 0 0 50 H I L BNN
+F7 "JST Sales" 0 0 50 H I L BNN
+F8 "PH Series 2 Position 2 mm Pitch Surface Mount Side Entry Shrouded Header" 0 0 50 H I L BNN
+DRAW
+S -200 200 150 -300 0 0 6 f
+X 1 1 -300 100 100 R 40 40 0 0 P
+X 2 2 -300 0 100 R 40 40 0 0 P
+X SHIELD S1 -300 -200 100 R 40 40 0 0 P
+ENDDRAW
+ENDDEF
+#
 # Mechanical_MountingHole
 #
 DEF Mechanical_MountingHole H 0 40 Y Y 1 F N
@@ -661,7 +662,6 @@ P 2 1 1 20 200 -230 200 170 N
 P 3 1 1 20 200 -130 100 -30 100 20 N
 P 3 1 1 20 200 -80 300 20 300 70 N
 P 4 1 1 10 150 170 200 270 250 170 150 170 F
-X Shield 0 -700 -550 200 R 50 50 1 1 P
 X GND A1 -700 -350 200 R 50 50 1 1 w
 X RX2- A10 -700 350 200 R 50 50 1 1 B
 X RX2+ A11 -700 250 200 R 50 50 1 1 B
@@ -686,6 +686,7 @@ X D+ B6 650 250 200 L 50 50 1 1 B
 X D- B7 650 450 200 L 50 50 1 1 B
 X SBU2 B8 -700 -200 200 R 50 50 1 1 B
 X VBUS B9 650 850 200 L 50 50 1 1 P N
+X Shield S1 -700 -550 200 R 50 50 1 1 P
 ENDDRAW
 ENDDEF
 #
