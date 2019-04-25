@@ -14,33 +14,29 @@ Comment2 ""
 Comment3 ""
 Comment4 ""
 $EndDescr
-Text GLabel 1650 1200 2    50   Input ~ 0
+Text GLabel 1150 1000 0    50   Input ~ 0
 VDD_nRF
 $Comp
 L power:GND #PWR?
 U 1 1 5C9538B5
-P 2150 1100
+P 1100 1250
 AR Path="/5C9538B5" Ref="#PWR?"  Part="1" 
 AR Path="/5C94F379/5C9538B5" Ref="#PWR020"  Part="1" 
-F 0 "#PWR020" H 2150 850 50  0001 C CNN
-F 1 "GND" H 2155 927 50  0000 C CNN
-F 2 "" H 2150 1100 50  0001 C CNN
-F 3 "" H 2150 1100 50  0001 C CNN
-	1    2150 1100
+F 0 "#PWR020" H 1100 1000 50  0001 C CNN
+F 1 "GND" H 1105 1077 50  0000 C CNN
+F 2 "" H 1100 1250 50  0001 C CNN
+F 3 "" H 1100 1250 50  0001 C CNN
+	1    1100 1250
 	1    0    0    -1  
 $EndComp
-Text GLabel 1150 1100 0    50   Input ~ 0
-SWDIO
-Text GLabel 1150 1200 0    50   Input ~ 0
-SWDCLK
 Text GLabel 1650 1000 2    50   Input ~ 0
-P1.18_RESET
+SWDIO
+Text GLabel 1650 1100 2    50   Input ~ 0
+SWDCLK
 Text Notes 600  600  0    50   ~ 0
 Debug IN Connector / Programmer
 Text Notes 7000 6850 0    50   ~ 0
 GPIO Registers:\nPort 0 : P0.00 - P0.31\nPort 1 : P1.00 - P1.15
-Text GLabel 1150 1000 0    50   Input ~ 0
-P1.00_SWO
 Text GLabel 6800 4700 0    50   Input ~ 0
 P0.12
 Text GLabel 6800 4600 0    50   Input ~ 0
@@ -119,9 +115,9 @@ Text GLabel 10500 4800 0    50   Input ~ 0
 P1.10
 Text GLabel 10500 4700 0    50   Input ~ 0
 P1.11
-Text GLabel 6800 4400 0    50   Input ~ 0
-P0.10_NFC2
 Text GLabel 6800 4500 0    50   Input ~ 0
+P0.10_NFC2
+Text GLabel 6800 4400 0    50   Input ~ 0
 P0.09_NFC1
 Text GLabel 10500 5900 0    50   Input ~ 0
 SWDIO
@@ -268,6 +264,12 @@ F 3 "~" H 1350 1100 50  0001 C CNN
 	1    1350 1100
 	1    0    0    -1  
 $EndComp
+Text GLabel 1650 1200 2    50   Input ~ 0
+P1.00_SWO
+Text GLabel 1150 1100 0    50   Input ~ 0
+P1.18_RESET
 Wire Wire Line
-	2150 1100 1650 1100
+	1150 1200 1100 1200
+Wire Wire Line
+	1100 1200 1100 1250
 $EndSCHEMATC

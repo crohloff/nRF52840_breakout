@@ -119,9 +119,9 @@ Text GLabel 10500 4800 0    50   Input ~ 0
 P1.10
 Text GLabel 10500 4700 0    50   Input ~ 0
 P1.11
-Text GLabel 6800 4400 0    50   Input ~ 0
-P0.10_NFC2
 Text GLabel 6800 4500 0    50   Input ~ 0
+P0.10_NFC2
+Text GLabel 6800 4400 0    50   Input ~ 0
 P0.09_NFC1
 Text GLabel 10500 5900 0    50   Input ~ 0
 SWDIO
