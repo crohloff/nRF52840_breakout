@@ -74,17 +74,6 @@ F 3 "" H 1650 1450 50  0001 C CNN
 	0    1    1    0   
 $EndComp
 $Comp
-L power:GND #PWR0110
-U 1 1 5CC24F90
-P 1650 1650
-F 0 "#PWR0110" H 1650 1400 50  0001 C CNN
-F 1 "GND" V 1655 1522 50  0000 R CNN
-F 2 "" H 1650 1650 50  0001 C CNN
-F 3 "" H 1650 1650 50  0001 C CNN
-	1    1650 1650
-	0    1    1    0   
-$EndComp
-$Comp
 L Device:R_Small R1
 U 1 1 5CC25020
 P 1050 1750
@@ -156,8 +145,6 @@ F 3 "" H 900 2250 50  0001 C CNN
 $EndComp
 Wire Wire Line
 	1650 1450 1700 1450
-Wire Wire Line
-	1650 1650 1700 1650
 Wire Wire Line
 	900  1750 950  1750
 Wire Wire Line
@@ -501,7 +488,7 @@ L Device:L_Small L5
 U 1 1 5CC4F49A
 P 8600 1050
 F 0 "L5" V 8785 1050 50  0000 C CNN
-F 1 "L_Small" V 8694 1050 50  0000 C CNN
+F 1 "1.5µH" V 8694 1050 50  0000 C CNN
 F 2 "Inductor_SMD:L_0402_1005Metric" H 8600 1050 50  0001 C CNN
 F 3 "~" H 8600 1050 50  0001 C CNN
 	1    8600 1050
@@ -564,4 +551,6 @@ Wire Wire Line
 Connection ~ 4300 1750
 Wire Wire Line
 	4300 1750 4650 1750
+Text GLabel 1700 1650 0    50   Input ~ 0
+P0.03_AIN1
 $EndSCHEMATC

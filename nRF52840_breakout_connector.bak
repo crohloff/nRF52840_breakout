@@ -14,25 +14,6 @@ Comment2 ""
 Comment3 ""
 Comment4 ""
 $EndDescr
-Text GLabel 1150 1000 0    50   Input ~ 0
-VDD_nRF
-$Comp
-L power:GND #PWR?
-U 1 1 5C9538B5
-P 1100 1250
-AR Path="/5C9538B5" Ref="#PWR?"  Part="1" 
-AR Path="/5C94F379/5C9538B5" Ref="#PWR020"  Part="1" 
-F 0 "#PWR020" H 1100 1000 50  0001 C CNN
-F 1 "GND" H 1105 1077 50  0000 C CNN
-F 2 "" H 1100 1250 50  0001 C CNN
-F 3 "" H 1100 1250 50  0001 C CNN
-	1    1100 1250
-	1    0    0    -1  
-$EndComp
-Text GLabel 1650 1000 2    50   Input ~ 0
-SWDIO
-Text GLabel 1650 1100 2    50   Input ~ 0
-SWDCLK
 Text Notes 600  600  0    50   ~ 0
 Debug IN Connector / Programmer
 Text Notes 7000 6850 0    50   ~ 0
@@ -41,9 +22,9 @@ Text GLabel 6800 4700 0    50   Input ~ 0
 P0.12
 Text GLabel 6800 4600 0    50   Input ~ 0
 P0.11
-Text GLabel 10500 4900 0    50   Input ~ 0
+Text GLabel 10500 4800 0    50   Input ~ 0
 P1.09
-Text GLabel 10500 5000 0    50   Input ~ 0
+Text GLabel 10500 4900 0    50   Input ~ 0
 P1.08
 Text GLabel 6800 4300 0    50   Input ~ 0
 P0.08
@@ -91,13 +72,13 @@ Text GLabel 6800 6000 0    50   Input ~ 0
 P0.25
 Text GLabel 10500 6000 0    50   Input ~ 0
 P1.00_SWO
-Text GLabel 10500 4600 0    50   Input ~ 0
-P1.12
 Text GLabel 10500 4500 0    50   Input ~ 0
-P1.13
+P1.12
 Text GLabel 10500 4400 0    50   Input ~ 0
-P1.14
+P1.13
 Text GLabel 10500 4300 0    50   Input ~ 0
+P1.14
+Text GLabel 10500 4200 0    50   Input ~ 0
 P1.15
 Text GLabel 6800 4200 0    50   Input ~ 0
 P0.03_AIN1
@@ -111,9 +92,9 @@ Text GLabel 9050 4200 3    50   Input ~ 0
 P0.30_AIN6
 Text GLabel 8950 4200 3    50   Input ~ 0
 P0.31_AIN7
-Text GLabel 10500 4800 0    50   Input ~ 0
-P1.10
 Text GLabel 10500 4700 0    50   Input ~ 0
+P1.10
+Text GLabel 10500 4600 0    50   Input ~ 0
 P1.11
 Text GLabel 6800 4500 0    50   Input ~ 0
 P0.10_NFC2
@@ -123,19 +104,19 @@ Text GLabel 10500 5900 0    50   Input ~ 0
 SWDIO
 Text GLabel 10500 5800 0    50   Input ~ 0
 SWDCLK
-Text GLabel 10500 5700 0    50   Input ~ 0
-P1.01
 Text GLabel 10500 5600 0    50   Input ~ 0
-P1.02
+P1.01
 Text GLabel 10500 5500 0    50   Input ~ 0
-P1.03
+P1.02
 Text GLabel 10500 5400 0    50   Input ~ 0
-P1.04
+P1.03
 Text GLabel 10500 5300 0    50   Input ~ 0
-P1.05
+P1.04
 Text GLabel 10500 5200 0    50   Input ~ 0
-P1.06
+P1.05
 Text GLabel 10500 5100 0    50   Input ~ 0
+P1.06
+Text GLabel 10500 5000 0    50   Input ~ 0
 P1.07
 Text GLabel 8850 4200 3    50   Input ~ 0
 VDD_BAT
@@ -188,7 +169,7 @@ Wire Wire Line
 	6750 6250 6750 6200
 Wire Wire Line
 	6750 6200 6800 6200
-Text GLabel 10500 4200 0    50   Input ~ 0
+Text GLabel 10500 5700 0    50   Input ~ 0
 VDD_nRF
 $Comp
 L power:GND #PWR0104
@@ -254,22 +235,53 @@ F 3 "~" H 8550 4000 50  0001 C CNN
 	0    -1   -1   0   
 $EndComp
 $Comp
-L Connector_Generic:Conn_02x03_Odd_Even J2
-U 1 1 5CC7EB10
-P 1350 1100
-F 0 "J2" H 1400 1417 50  0000 C CNN
-F 1 "Conn_02x03_Odd_Even" H 1400 1326 50  0000 C CNN
-F 2 "Connector:Tag-Connect_TC2030-IDC-NL_2x03_P1.27mm_Vertical" H 1350 1100 50  0001 C CNN
-F 3 "~" H 1350 1100 50  0001 C CNN
-	1    1350 1100
+L Connector:Conn_ARM_JTAG_SWD_10 J2
+U 1 1 5CCC0F70
+P 1950 1400
+F 0 "J2" H 1510 1446 50  0000 R CNN
+F 1 "Conn_ARM_JTAG_SWD_10" H 1510 1355 50  0000 R CNN
+F 2 "Connector_PinHeader_1.27mm:PinHeader_2x05_P1.27mm_Vertical_SMD" H 1950 1400 50  0001 C CNN
+F 3 "http://infocenter.arm.com/help/topic/com.arm.doc.ddi0314h/DDI0314H_coresight_components_trm.pdf" V 1600 150 50  0001 C CNN
+	1    1950 1400
 	1    0    0    -1  
 $EndComp
-Text GLabel 1650 1200 2    50   Input ~ 0
-P1.00_SWO
-Text GLabel 1150 1100 0    50   Input ~ 0
+Text GLabel 2450 1100 2    50   Input ~ 0
 P1.18_RESET
+Text GLabel 2450 1400 2    50   Input ~ 0
+SWDIO
+Text GLabel 2450 1300 2    50   Input ~ 0
+SWDCLK
+Text GLabel 2450 1500 2    50   Input ~ 0
+P1.00_SWO
+NoConn ~ 2450 1600
+$Comp
+L power:GND #PWR?
+U 1 1 5CCC1128
+P 1900 2100
+AR Path="/5CCC1128" Ref="#PWR?"  Part="1" 
+AR Path="/5C94F379/5CCC1128" Ref="#PWR0123"  Part="1" 
+F 0 "#PWR0123" H 1900 1850 50  0001 C CNN
+F 1 "GND" H 1905 1927 50  0000 C CNN
+F 2 "" H 1900 2100 50  0001 C CNN
+F 3 "" H 1900 2100 50  0001 C CNN
+	1    1900 2100
+	1    0    0    -1  
+$EndComp
 Wire Wire Line
-	1150 1200 1100 1200
+	1850 2000 1850 2050
 Wire Wire Line
-	1100 1200 1100 1250
+	1850 2050 1900 2050
+Wire Wire Line
+	1950 2050 1950 2000
+Wire Wire Line
+	1900 2050 1900 2100
+Connection ~ 1900 2050
+Wire Wire Line
+	1900 2050 1950 2050
+Text GLabel 2000 750  2    50   Input ~ 0
+VDD_nRF
+Wire Wire Line
+	2000 750  1950 750 
+Wire Wire Line
+	1950 750  1950 800 
 $EndSCHEMATC
