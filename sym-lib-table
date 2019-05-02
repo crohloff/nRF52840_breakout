@@ -7,4 +7,6 @@
   (lib (name nrf52840_breakout)(type Legacy)(uri /home/chris/repos/nRF52840_breakout/custom_symbols/nrf52840_breakout.lib)(options "")(descr ""))
   (lib (name BQ24072)(type Legacy)(uri ${KIPRJMOD}/custom_symbols/BQ24072.lib)(options "")(descr ""))
   (lib (name tps63031)(type Legacy)(uri ${KIPRJMOD}/custom_symbols/tps63031.lib)(options "")(descr ""))
+  (lib (name CONN_SWF)(type Legacy)(uri ${KIPRJMOD}/custom_symbols/CONN_SWF.lib)(options "")(descr ""))
+  (lib (name LTST-C19HE1WT)(type Legacy)(uri ${KIPRJMOD}/custom_symbols/LTST-C19HE1WT.lib)(options "")(descr ""))
 )
