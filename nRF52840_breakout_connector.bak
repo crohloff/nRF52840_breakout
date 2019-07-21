@@ -1,10 +1,10 @@
 EESchema Schematic File Version 4
 LIBS:nRF52840_breakout-cache
-EELAYER 26 0
+EELAYER 29 0
 EELAYER END
 $Descr A4 11693 8268
 encoding utf-8
-Sheet 2 4
+Sheet 2 3
 Title "nRF52840_breakout"
 Date "2019-03-22"
 Rev "1.0.0"
@@ -20,82 +20,44 @@ Text Notes 7000 6850 0    50   ~ 0
 GPIO Registers:\nPort 0 : P0.00 - P0.31\nPort 1 : P1.00 - P1.15
 Text GLabel 3700 1500 0    50   Input ~ 0
 P0.12
-Text GLabel 3700 1400 0    50   Input ~ 0
-P0.11
 Text GLabel 6500 1600 0    50   Input ~ 0
 P1.09
-Text GLabel 6500 1700 0    50   Input ~ 0
-P1.08
 Text GLabel 3700 1100 0    50   Input ~ 0
 P0.08
-Text GLabel 4350 1000 3    50   Input ~ 0
-P0.07
 Text GLabel 4450 1000 3    50   Input ~ 0
 P0.06
-Text GLabel 4550 1000 3    50   Input ~ 0
-P0.05_AIN3
 Text GLabel 4650 1000 3    50   Input ~ 0
 P0.04_AIN2
-Text GLabel 4750 1000 3    50   Input ~ 0
-P0.27
 Text GLabel 4850 1000 3    50   Input ~ 0
 P0.26
 Text GLabel 6500 2900 0    50   Input ~ 0
 P1.18_RESET
-Text GLabel 3700 2000 0    50   Input ~ 0
-P0.17
-Text GLabel 3700 1900 0    50   Input ~ 0
-P0.16
 Text GLabel 3700 1800 0    50   Input ~ 0
 P0.15
-Text GLabel 3700 1700 0    50   Input ~ 0
-P0.14
-Text GLabel 3700 1600 0    50   Input ~ 0
-P0.13
 Text GLabel 5050 1000 3    50   Input ~ 0
 D+
 Text GLabel 5150 1000 3    50   Input ~ 0
 D-
 Text GLabel 3700 2300 0    50   Input ~ 0
 P0.20
-Text GLabel 3700 2100 0    50   Input ~ 0
-P0.19
-Text GLabel 3700 2400 0    50   Input ~ 0
-P0.21
-Text GLabel 3700 2600 0    50   Input ~ 0
-P0.23
 Text GLabel 3700 2500 0    50   Input ~ 0
 P0.22
 Text GLabel 3700 2700 0    50   Input ~ 0
 P0.24
-Text GLabel 3700 2800 0    50   Input ~ 0
-P0.25
 Text GLabel 6500 2800 0    50   Input ~ 0
 P1.00_SWO
-Text GLabel 6500 1300 0    50   Input ~ 0
-P1.12
 Text GLabel 6500 1200 0    50   Input ~ 0
 P1.13
-Text GLabel 6500 1100 0    50   Input ~ 0
-P1.14
 Text GLabel 6500 1000 0    50   Input ~ 0
 P1.15
-Text GLabel 3700 1000 0    50   Input ~ 0
-P0.03_AIN1
 Text GLabel 5850 1000 3    50   Input ~ 0
 P0.02_AIN0
-Text GLabel 5750 1000 3    50   Input ~ 0
-P0.28_AIN4
 Text GLabel 5650 1000 3    50   Input ~ 0
 P0.29_AIN5
-Text GLabel 5550 1000 3    50   Input ~ 0
-P0.30_AIN6
 Text GLabel 5450 1000 3    50   Input ~ 0
 P0.31_AIN7
 Text GLabel 6500 1500 0    50   Input ~ 0
 P1.10
-Text GLabel 6500 1400 0    50   Input ~ 0
-P1.11
 Text GLabel 3700 1300 0    50   Input ~ 0
 P0.10_NFC2
 Text GLabel 3700 1200 0    50   Input ~ 0
@@ -104,20 +66,12 @@ Text GLabel 6500 2700 0    50   Input ~ 0
 SWDIO
 Text GLabel 6500 2600 0    50   Input ~ 0
 SWDCLK
-Text GLabel 6500 2400 0    50   Input ~ 0
-P1.01
 Text GLabel 6500 2300 0    50   Input ~ 0
 P1.02
-Text GLabel 6500 2200 0    50   Input ~ 0
-P1.03
 Text GLabel 6500 2100 0    50   Input ~ 0
 P1.04
-Text GLabel 6500 2000 0    50   Input ~ 0
-P1.05
 Text GLabel 6500 1900 0    50   Input ~ 0
 P1.06
-Text GLabel 6500 1800 0    50   Input ~ 0
-P1.07
 Text GLabel 5350 1000 3    50   Input ~ 0
 VDD_BAT
 $Comp
@@ -199,8 +153,6 @@ F 3 "" H 4950 1300 50  0001 C CNN
 $EndComp
 Wire Wire Line
 	4950 1300 4950 1000
-Text GLabel 3700 2200 0    50   Input ~ 0
-VDDH
 $Comp
 L Connector_Generic:Conn_01x22 J3
 U 1 1 5CC7B796
@@ -296,4 +248,12 @@ Wire Notes Line
 	500  500  7300 500 
 Wire Notes Line
 	3100 500  3100 3400
+NoConn ~ 3700 2200
+NoConn ~ 3700 2100
+NoConn ~ 3700 2000
+Text GLabel 3700 1600 0    50   Input ~ 0
+P0.13
+NoConn ~ 3700 1900
+NoConn ~ 3700 1700
+NoConn ~ 3700 1400
 $EndSCHEMATC

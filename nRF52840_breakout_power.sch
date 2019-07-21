@@ -1,10 +1,10 @@
 EESchema Schematic File Version 4
 LIBS:nRF52840_breakout-cache
-EELAYER 26 0
+EELAYER 29 0
 EELAYER END
 $Descr A4 11693 8268
 encoding utf-8
-Sheet 3 4
+Sheet 3 3
 Title "nRF52840_breakout"
 Date "2019-03-22"
 Rev "1.0.0"
