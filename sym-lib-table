@@ -1,12 +1,3 @@
 (sym_lib_table
   (lib (name nrf52840)(type Legacy)(uri ${KIPRJMOD}/custom_symbols/nrf52840.lib)(options "")(descr ""))
-  (lib (name usb_type_c)(type Legacy)(uri ${KIPRJMOD}/custom_symbols/usb_type_c.lib)(options "")(descr ""))
-  (lib (name mcp73832-2-ot)(type Legacy)(uri ${KIPRJMOD}/custom_symbols/mcp73832-2-ot.lib)(options "")(descr ""))
-  (lib (name CONNECTOR_FFC_1734592-5)(type Legacy)(uri ${KIPRJMOD}/custom_symbols/CONNECTOR_FFC_1734592-5.lib)(options "")(descr ""))
-  (lib (name JST_PH_S2B-PH-SM4-TB_LF__SN_)(type Legacy)(uri ${KIPRJMOD}/custom_symbols/JST_PH_S2B-PH-SM4-TB_LF__SN_.lib)(options "")(descr ""))
-  (lib (name nrf52840_breakout)(type Legacy)(uri /home/chris/repos/nRF52840_breakout/custom_symbols/nrf52840_breakout.lib)(options "")(descr ""))
-  (lib (name BQ24072)(type Legacy)(uri ${KIPRJMOD}/custom_symbols/BQ24072.lib)(options "")(descr ""))
-  (lib (name tps63031)(type Legacy)(uri ${KIPRJMOD}/custom_symbols/tps63031.lib)(options "")(descr ""))
-  (lib (name CONN_SWF)(type Legacy)(uri ${KIPRJMOD}/custom_symbols/CONN_SWF.lib)(options "")(descr ""))
-  (lib (name LTST-C19HE1WT)(type Legacy)(uri ${KIPRJMOD}/custom_symbols/LTST-C19HE1WT.lib)(options "")(descr ""))
 )
