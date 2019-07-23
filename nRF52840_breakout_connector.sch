@@ -161,6 +161,7 @@ F 0 "J3" H 4150 1900 50  0000 C CNN
 F 1 "Conn_01x22" H 4200 2000 50  0000 C CNN
 F 2 "Connector_PinHeader_1.27mm:PinHeader_1x22_P1.27mm_Vertical" H 3900 2000 50  0001 C CNN
 F 3 "~" H 3900 2000 50  0001 C CNN
+F 4 "1" H 3900 2000 50  0001 C CNN "DNP"
 	1    3900 2000
 	1    0    0    1   
 $EndComp
@@ -172,6 +173,7 @@ F 0 "J5" H 6950 2000 50  0000 C CNN
 F 1 "Conn_01x22" H 7000 1900 50  0000 C CNN
 F 2 "Connector_PinHeader_1.27mm:PinHeader_1x22_P1.27mm_Vertical" H 6700 1900 50  0001 C CNN
 F 3 "~" H 6700 1900 50  0001 C CNN
+F 4 "1" H 6700 1900 50  0001 C CNN "DNP"
 	1    6700 1900
 	1    0    0    -1  
 $EndComp
@@ -183,6 +185,7 @@ F 0 "J4" V 5267 746 50  0000 C CNN
 F 1 "Conn_01x16" V 5176 746 50  0000 C CNN
 F 2 "Connector_PinHeader_1.27mm:PinHeader_1x16_P1.27mm_Vertical" H 5050 800 50  0001 C CNN
 F 3 "~" H 5050 800 50  0001 C CNN
+F 4 "1" H 5050 800 50  0001 C CNN "DNP"
 	1    5050 800 
 	0    -1   -1   0   
 $EndComp
@@ -193,7 +196,11 @@ P 1950 1400
 F 0 "J2" H 1510 1446 50  0000 R CNN
 F 1 "Conn_ARM_JTAG_SWD_10" H 1510 1355 50  0000 R CNN
 F 2 "Connector_PinHeader_1.27mm:PinHeader_2x05_P1.27mm_Vertical_SMD" H 1950 1400 50  0001 C CNN
-F 3 "http://infocenter.arm.com/help/topic/com.arm.doc.ddi0314h/DDI0314H_coresight_components_trm.pdf" V 1600 150 50  0001 C CNN
+F 3 "http://suddendocs.samtec.com/prints/ftsh-1xx-xx-xxx-dv-xxx-xxx-mkt.pdf" V 1600 150 50  0001 C CNN
+F 4 " CONN HEADER SMD 10POS 1.27MM " H 1950 1400 50  0001 C CNN "Description"
+F 5 " SAM13936CT-ND " H 1950 1400 50  0001 C CNN "Digikey"
+F 6 " FTSH-105-01-S-DV-P-TR " H 1950 1400 50  0001 C CNN "MFG P/N"
+F 7 "Samtec Inc." H 1950 1400 50  0001 C CNN "Manufacturer"
 	1    1950 1400
 	1    0    0    -1  
 $EndComp
