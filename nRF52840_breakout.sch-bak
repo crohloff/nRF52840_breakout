@@ -1155,7 +1155,7 @@ F 5 "C108165" H 7700 1850 50  0001 C CNN "LCSC"
 F 6 "X201632MKD4SI" H 7700 1850 50  0001 C CNN "MFG P/N"
 F 7 "Yangxing Tech" H 7700 1850 50  0001 C CNN "Manufacturer"
 	1    7700 1850
-	0    1    -1   0   
+	0    -1   1    0   
 $EndComp
 $Comp
 L Device:R_Small R11
