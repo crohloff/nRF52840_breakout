@@ -1,5 +1,8 @@
 # nRF52840_breakout
 
+## Low Cost variant
+The low cost variant has four layers but no micro vias and features only the outer gpio ring of the nRF52840
+
 ## Tool used
 
  - KiCad 5.0.2
@@ -16,6 +19,4 @@
 
 ## Todo
 
- - Create PCB
- - Decide on formfactor
- - Choose parts
+ -
