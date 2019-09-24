@@ -1,7 +1,7 @@
 # nRF52840_breakout
 
 ## Low Cost variant
-The low cost variant has four layers but no micro vias and features only the outer gpio ring of the nRF52840
+The low cost variant has four layers but no micro vias, no sensors and different components for the power circuit
 
 ## Tool used
 
