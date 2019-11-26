@@ -195,11 +195,12 @@ P 1950 1400
 F 0 "J2" H 1510 1446 50  0000 R CNN
 F 1 "Conn_ARM_JTAG_SWD_10" H 1510 1355 50  0000 R CNN
 F 2 "Connector_PinHeader_1.27mm:PinHeader_2x05_P1.27mm_Vertical_SMD" H 1950 1400 50  0001 C CNN
-F 3 "http://suddendocs.samtec.com/prints/ftsh-1xx-xx-xxx-dv-xxx-xxx-mkt.pdf" V 1600 150 50  0001 C CNN
-F 4 " CONN HEADER SMD 10POS 1.27MM " H 1950 1400 50  0001 C CNN "Description"
-F 5 " SAM13936CT-ND " H 1950 1400 50  0001 C CNN "Digikey"
-F 6 " FTSH-105-01-S-DV-P-TR " H 1950 1400 50  0001 C CNN "MFG P/N"
-F 7 "Samtec Inc." H 1950 1400 50  0001 C CNN "Manufacturer"
+F 3 "https://cdn.amphenol-icc.com/media/wysiwyg/files/drawing/20021121.pdf" V 1600 150 50  0001 C CNN
+F 4 "CONN HEADER SMD 10POS 1.27MM" H 1950 1400 50  0001 C CNN "Description"
+F 5 "609-3695-1-ND" H 1950 1400 50  0001 C CNN "Digikey"
+F 6 "20021121-00010C4LF" H 1950 1400 50  0001 C CNN "MFG P/N"
+F 7 "Amphenol ICC (FCI)" H 1950 1400 50  0001 C CNN "Manufacturer"
+F 8 "C150517" H 1950 1400 50  0001 C CNN "LCSC"
 	1    1950 1400
 	1    0    0    -1  
 $EndComp
