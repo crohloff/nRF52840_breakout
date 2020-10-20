@@ -216,22 +216,6 @@ F 3 "" H 2800 1850 50  0001 C CNN
 	1    2800 1850
 	1    0    0    -1  
 $EndComp
-$Comp
-L Battery_Management:MCP73831-2-OT U3
-U 1 1 5D376B89
-P 8000 1800
-F 0 "U3" H 7650 2200 50  0000 C CNN
-F 1 "MCP73831-2-OT" H 7600 2100 50  0000 C CNN
-F 2 "Package_TO_SOT_SMD:SOT-23-5" H 8050 1550 50  0001 L CIN
-F 3 "http://ww1.microchip.com/downloads/en/DeviceDoc/20001984g.pdf" H 7850 1750 50  0001 C CNN
-F 4 " MCP73831T-2ATI/OTCT-ND " H 8000 1800 50  0001 C CNN "Digikey"
-F 5 "MCP73831T-2ATI/OT" H 8000 1800 50  0001 C CNN "MFG P/N"
-F 6 " IC CONTROLLR LI-ION 4.2V SOT23-5 " H 8000 1800 50  0001 C CNN "Description"
-F 7 "C14879" H 8000 1800 50  0001 C CNN "LCSC"
-F 8 "Microchip Tech" H 8000 1800 50  0001 C CNN "Manufacturer"
-	1    8000 1800
-	1    0    0    -1  
-$EndComp
 Text GLabel 8000 1200 2    50   Input ~ 0
 VBUS_nRF
 Wire Wire Line
@@ -300,9 +284,7 @@ Wire Wire Line
 Wire Wire Line
 	8400 1900 8400 2550
 Wire Wire Line
-	7600 2200 8000 2200
-Wire Wire Line
-	8000 2200 8000 2100
+	7600 2200 8100 2200
 Wire Wire Line
 	7400 2200 7300 2200
 Wire Wire Line
@@ -418,4 +400,36 @@ F 8 "Lite-On" H 4700 1950 50  0001 C CNN "Manufacturer"
 	1    4700 1950
 	0    -1   -1   0   
 $EndComp
+$Comp
+L power:GND #PWR?
+U 1 1 5F900D9B
+P 8100 2200
+F 0 "#PWR?" H 8100 1950 50  0001 C CNN
+F 1 "GND" H 8105 2027 50  0000 C CNN
+F 2 "" H 8100 2200 50  0001 C CNN
+F 3 "" H 8100 2200 50  0001 C CNN
+	1    8100 2200
+	1    0    0    -1  
+$EndComp
+$Comp
+L Battery_Management:MCP73831-2-OT U3
+U 1 1 5D376B89
+P 8000 1800
+F 0 "U3" H 7650 2200 50  0000 C CNN
+F 1 "MCP73831-2-OT" H 7600 2100 50  0000 C CNN
+F 2 "Package_TO_SOT_SMD:SOT-23-5" H 8050 1550 50  0001 L CIN
+F 3 "http://ww1.microchip.com/downloads/en/DeviceDoc/20001984g.pdf" H 7850 1750 50  0001 C CNN
+F 4 " MCP73831T-2ATI/OTCT-ND " H 8000 1800 50  0001 C CNN "Digikey"
+F 5 "MCP73831T-2ATI/OT" H 8000 1800 50  0001 C CNN "MFG P/N"
+F 6 " IC CONTROLLR LI-ION 4.2V SOT23-5 " H 8000 1800 50  0001 C CNN "Description"
+F 7 "C14879" H 8000 1800 50  0001 C CNN "LCSC"
+F 8 "Microchip Tech" H 8000 1800 50  0001 C CNN "Manufacturer"
+	1    8000 1800
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	8000 2100 8100 2100
+Wire Wire Line
+	8100 2100 8100 2200
+Connection ~ 8100 2200
 $EndSCHEMATC
